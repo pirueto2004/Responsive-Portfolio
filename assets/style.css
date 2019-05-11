@@ -27,11 +27,11 @@ body {
 .content-box {
     width: 100%;
     max-width: 960px;
-    height: auto;
+    height: 100%;
     margin: 20px auto;
     min-width: 0;
     background-color: #fff;
-    border: 1px solid rgba(0,0,0,.125);
+    border: 0px solid rgba(0,0,0,.125);
     border-radius: .25rem;
     overflow: auto;
     padding: 20px;
@@ -42,8 +42,8 @@ body {
 
 /* Horizontal line that divides contents on the box */
 .hr {
-    width:96%;
-    margin:0 auto;
+    width:100%;
+    /* margin:0 auto; */
     height: 1px;
     border-bottom: 1px solid teal;
 }
