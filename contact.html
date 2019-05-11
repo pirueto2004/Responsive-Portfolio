@@ -8,7 +8,10 @@
     <title>Contact Page</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- My own styling CSS -->
     <link rel="stylesheet"  type="text/css" href="assets/style.css">
           
@@ -26,24 +29,103 @@
                 <div class="collapse navbar-collapse  justify-content-end" id="navbarNav">
                   <ul class="navbar-nav ">
                     <li class="nav-item ">
-                      <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="index.html">About</span></a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="portfolio.html">Portfolio</a>
                     </li>
                     <li class="nav-item active">
-                      <a class="nav-link" href="contact.html">Contact</a>
+                      <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</a>
                     </li>
                   </ul>
                 </div>
             </nav>   
-          </div>
+    </div>
 
-    <!-- Main content -->
+    <!-- Main content: BEGIN -->
     <div class="container">
+      <div class="content-box">
+       <!-- row: BEGIN -->
         <div class="row">
-            <div class="col-12">
-                <div class="card my-3 p-3 shadow">
+          <!-- Second column Contact Info: BEGIN -->
+          <div class="col-12 col-md-4" >       
+              <div class="card my-3 p-1 shadow">
+                
+                    <div class="card-body">
+                        
+                        <div class="media">
+                            <div class="fa-layers fa-fw fa-2x mr-3">
+                                <i class="fas fa-circle text-primary"></i>
+                                <i class="fas fa-male text-white" data-fa-transform="shrink-5"></i>
+                            </div>
+                            <div class="media-body">
+                                Julio Bell Soublet
+                                <hr>
+                            </div>                               
+                        </div>
+                        
+                        <div class="media">
+                            <div class="fa-layers fa-fw fa-2x mr-3">
+                                <i class="fas fa-circle text-primary"></i>
+                                <i class="fas fa-calendar-alt text-white" data-fa-transform="shrink-8"></i>
+                            </div>
+                            <div class="media-body">
+                                <time datetime="1966-07-17">July 17, 1966</time>
+                                <hr>
+                            </div>                               
+                        </div>
+                        
+                        <div class="media">
+                            <div class="fa-layers fa-fw fa-2x mr-3">
+                                <i class="fas fa-circle text-primary"></i>
+                                <i class="fas fa-phone text-white" data-fa-transform="shrink-8"></i>
+                            </div>
+                            <ul class="media-body list-unstyled pb-3">
+                                <li><a href="tel:+17867680524">(786)-768-0524</a></li>
+                                <hr>
+                            </ul>  
+                                                         
+                        </div>
+                        
+                        <div class="media">
+                            <div class="fa-layers fa-fw fa-2x mr-3">
+                                <i class="fas fa-circle text-primary"></i>
+                                <i class="fas fa-envelope text-white" data-fa-transform="shrink-8"></i>
+                            </div>
+                            <ul class="media-body list-unstyled pb-3">
+                                <li><a href="mailto:juliobell2014@gmail.com">juliobell2014@gmail.com</a></li>
+                                <li><i class="fab fa-fw fa-linkedin text-muted"></i> <a href="#">LinkedIn</a></li>
+                                <li><i class="fab fa-fw fa-slack text-muted"></i> <a href="#">Slack</a></li>
+                              <li><hr></li>
+                            </ul>                               
+                        </div>
+                        
+                        <div class="media">
+                            <div class="fa-layers fa-fw fa-2x mr-3">
+                                <i class="fas fa-circle text-primary"></i>
+                                <i class="fas fa-home text-white" data-fa-transform="shrink-8"></i>
+                            </div>
+                            <div class="media-body">
+                                <address class="mb-0">
+                                    7000 SW 23rd St.<br>
+                                    Apt 30 <br>
+                                    Miami, Fl 33155<br>
+                                    United States
+                                </address>
+                              
+                            </div>                               
+                        </div>
+                        
+                        
+                    </div>
+            </div>
+
+      <!-- Contact Info content: END -->  
+      </div> 
+
+          <!-- First column Contact Form: BEGIN -->
+            <div class="col-12 col-md-8">
+                <div class="card my-3 p-1 shadow">
                     <h1 class="card-title pl-3">Contact</h1>
                     <div class="hr"></div>
                     <div class="card-body">   
@@ -74,8 +156,15 @@
                     </div>
                 </div>
             </div>
-        </div>    
+            <!-- First column Contact Form: END -->
+
+            
+
+        </div>
+        <!-- row: END -->
+      </div>
     </div>
+  <!-- Main content: END -->
 
     <div class="card-footer text-center text-white bg-dark mt-3 py-4 border border-info border-top border-bottom-0 border-left-0 border-right-0">
             Copyright &copy; 2019
@@ -86,5 +175,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/js/mdb.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
   </body>
   </html>
