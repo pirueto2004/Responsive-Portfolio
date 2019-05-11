@@ -18,4 +18,18 @@ $(document).ready(function(){
         window.location.href = "https://pirueto2004.github.io/unit-4-game/";
     });
 
+    //Toggle button to show/hide the info paragraphs
+    $("#collapse").click(function(){     
+        if($(this).text().trim() == "Show More") 
+        {
+          $(this).text("Show Less");
+          $("#collapse-edu").toggle();
+        }
+        else
+        {
+          $(this).text("Show More");
+          $("#collapse-edu").toggle();
+        };      
+    });
+
 });
