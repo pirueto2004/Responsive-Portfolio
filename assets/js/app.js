@@ -8,6 +8,9 @@ $(document).ready(function(){
         let buttonId = $(this).attr("id");
 
         switch (buttonId) {
+            case "liri_code" :
+                window.location.href = "https://github.com/pirueto2004/liri-node-app";
+                break;
             case "vms_page" :
                 window.location.href = "https://iamjpyo.github.io/group_project/";
                 break;
