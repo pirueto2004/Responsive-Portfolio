@@ -8,6 +8,15 @@ $(document).ready(function(){
         let buttonId = $(this).attr("id");
 
         switch (buttonId) {
+            case "ff_page":
+                window.location.href = "https://young-escarpment-45912.herokuapp.com/";
+                break;
+            case "ff_code":
+                window.location.href = "https://github.com/pirueto2004/FriendFinder";
+                break;
+            case "ff_post" :
+                window.location.href = "https://www.linkedin.com/feed/update/urn:li:activity:6538190906342854656";
+                break;
             case "liri_code" :
                 window.location.href = "https://github.com/pirueto2004/liri-node-app";
                 break;
@@ -32,7 +41,7 @@ $(document).ready(function(){
                 window.location.href = "https://github.com/pirueto2004/TriviaGame";
                 break;
             case "trivia_post" :
-                window.location.href = "https://www.linkedin.com/pulse/trivial-trivia-quiz-julio-bell";
+                window.location.href = "https://www.linkedin.com/feed/update/urn:li:activity:6533162029530836992";
                 break;
                 
             case "train_page" :
@@ -42,7 +51,7 @@ $(document).ready(function(){
                 window.location.href = "https://github.com/pirueto2004/TrainScheduler";
                 break;
             case "train_post" :
-                window.location.href = "https://www.linkedin.com/pulse/train-scheduler-julio-bell";
+                window.location.href = "https://www.linkedin.com/feed/update/urn:li:activity:6533173168633364480";
                 break;
 
             case "gifs_page" :
@@ -52,7 +61,7 @@ $(document).ready(function(){
                 window.location.href = "https://github.com/pirueto2004/GifBoard";
                 break;
             case "gifs_post" :
-                window.location.href = "https://www.linkedin.com/pulse/collection-awesome-gifs-julio-bell";
+                window.location.href = "https://www.linkedin.com/feed/update/urn:li:activity:6533171020474433536";
                 break;
                 
             case "crystal_page" :
@@ -62,7 +71,7 @@ $(document).ready(function(){
                 window.location.href = "https://github.com/pirueto2004/unit-4-game";
                 break;
             case "crystal_post" :
-                window.location.href = "https://www.linkedin.com/pulse/crystal-collector-julio-bell";
+                window.location.href = "https://www.linkedin.com/feed/update/urn:li:activity:6533169280219963392";
                 break;
        }
     });
