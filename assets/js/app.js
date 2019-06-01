@@ -77,27 +77,7 @@ $(document).ready(function(){
     });
    
 
-    
-
-    // $("#vms_page").on("click", function(){
-    //     window.location.href = "https://iamjpyo.github.io/group_project/";
-    // });
-    // $("#hangman_page").on("click", function(){
-    //     window.location.href = "https://pirueto2004.github.io/Word-Guess-Game/";
-    // });
-    // $("#trivia_page").on("click", function(){
-    //     window.location.href = "https://pirueto2004.github.io/TriviaGame/";
-    // });
-    // $("#train_page").on("click", function(){
-    //     window.location.href = "https://pirueto2004.github.io/TrainScheduler/";
-    // });
-    // $("#gifs_page").on("click", function(){
-    //     window.location.href = "https://pirueto2004.github.io/GifBoard/";
-    // });
-    // $("#crystal_page").on("click", function(){
-    //     window.location.href = "https://pirueto2004.github.io/unit-4-game/";
-    // });
-
+  
     //Toggle button to show/hide the info paragraphs
     $("#collapse").click(function(){     
         if($(this).text().trim() == "Show More") 

@@ -54,7 +54,7 @@
         <div class="row mt-3 ">
           <!-- Second column Contact Info: BEGIN -->
           <div class="col-12 col-md-4" >       
-              <div class="card mt-3 shadow">
+              <div class="card my-5 shadow">
                 
                     <div class="card-body">
                         
@@ -81,7 +81,7 @@
                         </div>
                         
                         <div class="media">
-                            <div class="fa-layers fa-fw fa-2x mr-3">
+                            <div class="fa-layers fa-fw fa-2x mr-3">    
                                 <i class="fas fa-circle text-primary"></i>
                                 <i class="fas fa-phone text-white" data-fa-transform="shrink-8"></i>
                             </div>
@@ -130,30 +130,37 @@
 
           <!-- First column Contact Form: BEGIN -->
             <div class="col-12 col-md-8">
-                <div class="card my-3 p-1 shadow">
-                    <div class="card-body">   
-                        <form > 
-                            <div>
-                                <label for="name">Name</label>
+                <div class="card my-5 p-1 shadow">
+                    <div class="card-body">
+                        <!-- Header -->
+                        <div class="form-header blue accent-1">
+                                <h3 class="mt-2"><i class="fas fa-envelope"></i> Write to me:</h3>
+                        </div>   
+                        <form id="contact-form" name="contact-form" action="" method="POST">
+                            <!-- Material input -->
+                            <div class="md-form md-outline mb-0">
+                                <i class="fas fa-user prefix grey-text"></i>
+                                <input type="text" id="form-name" class="form-control">
+                                <label for="form-name">Your name</label>
                             </div>
-                            <div>
-                                <input type="text" id="name" name="name" placeholder="Your name..">
+
+                            <div class="md-form md-outline mb-0">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <input type="text" id="form-email" class="form-control">
+                                <label for="form-email">Your email</label>
                             </div>
-        
-                            <div>
-                                <label for="email">Email</label>
+                            <div class="md-form md-outline mb-0">
+                                <i class="fas fa-tag prefix grey-text"></i>
+                                <input type="text" id="form-Subject" class="form-control">
+                                <label for="form-Subject">Subject</label>
                             </div>
-                            <div>
-                                <input type="email" id="email" name="email" placeholder="example@host.com">
+                            <div class="md-form md-outline">
+                                <i class="fas fa-pencil-alt prefix grey-text"></i>
+                                <textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
+                                <label for="form-text">Send message</label>
                             </div>
-                            <div>
-                                <label for="message">Message</label>
-                            </div>
-                            <div>
-                                <textarea id="message" name="message" placeholder="Your message here..."></textarea> 
-                            </div>
-                            <div>
-                                <input id="submit" type="submit" value="Submit">
+                            <div class="text-center">
+                                <button class="btn btn-light-blue">Submit</button>
                             </div>
                         </form>
                     </div>
@@ -175,7 +182,8 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- MDB core JavaScript -->
