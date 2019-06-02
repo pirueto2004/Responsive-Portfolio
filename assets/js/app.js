@@ -8,6 +8,18 @@ $(document).ready(function(){
         let buttonId = $(this).attr("id");
 
         switch (buttonId) {
+            case "btn-slack":
+                window.location.href = "https://julio-bell.slack.com/messages/CG1G972MQ/";
+                break;
+            case "btn-git":
+                window.location.href = "https://github.com/pirueto2004";
+                break;
+            case "btn-li":
+                window.location.href = "https://www.linkedin.com/in/julio-bell-bb36a417b/";
+                break;
+            case "btn-fb":
+                window.location.href = "https://www.facebook.com/pirueto2004?ref=bookmarks";
+                break;
             case "ff_page":
                 window.location.href = "https://young-escarpment-45912.herokuapp.com/";
                 break;
