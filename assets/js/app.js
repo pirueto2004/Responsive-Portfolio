@@ -29,6 +29,9 @@ $(document).ready(function(){
             case "ff_post" :
                 window.location.href = "https://www.linkedin.com/feed/update/urn:li:activity:6538190906342854656";
                 break;
+            case "bamazon_code" :
+                window.location.href = "https://github.com/pirueto2004/Bamazon-App";
+                break;
             case "liri_code" :
                 window.location.href = "https://github.com/pirueto2004/liri-node-app";
                 break;
