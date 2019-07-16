@@ -8,6 +8,15 @@ $(document).ready(function(){
         let buttonId = $(this).attr("id");
 
         switch (buttonId) {
+            case "warehouse_page":
+                window.location.href = "https://stormy-shore-25459.herokuapp.com/";
+                break;
+            case "warehouse_code":
+                window.location.href = "https://github.com/amitsinghgh19/DreamTeamProject-2";
+                break;
+            case "warehouse_post" :
+                window.location.href = " ";
+                break;
             case "burger_page":
                 window.location.href = "https://mysterious-garden-21264.herokuapp.com/";
                 break;
