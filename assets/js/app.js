@@ -8,11 +8,51 @@ $(document).ready(function(){
         let buttonId = $(this).attr("id");
 
         switch (buttonId) {
+            case "ezvalpark_page":
+                window.location.href = "https://ez-valpark.herokuapp.com/";
+                break;
+            case "ezvalpark_code":
+                window.location.href = "https://github.com/amitsinghgh19/dreamteampro3";
+                break;
+            case "ezvalpark_post" :
+                window.location.href = " ";
+                break;
+
+            case "googlebook_page":
+                window.location.href = "https://mern-google-books-app.herokuapp.com/";
+                break;
+            case "googlebook_code":
+                window.location.href = "https://github.com/pirueto2004/mern-google-books";
+                break;
+            case "googlebook_post" :
+                window.location.href = " ";
+                break;
+
+            case "clickygame_page":
+                window.location.href = "https://sleepy-coast-15218.herokuapp.com/";
+                break;
+            case "clickygame_code":
+                window.location.href = "https://github.com/pirueto2004/clickyGame-app";
+                break;
+            case "clickygame_post" :
+                window.location.href = " ";
+                break;
+
+            case "newspeek_page":
+                window.location.href = "https://ancient-basin-53851.herokuapp.com/";
+                break;
+            case "newspeek_code":
+                window.location.href = "https://github.com/pirueto2004/newsPeek-app";
+                break;
+            case "newspeek_post" :
+                window.location.href = " ";
+                break;
+
             case "warehouse_page":
-                window.location.href = "https://stormy-shore-25459.herokuapp.com/";
+                window.location.href = "https://warehouseconnect-app.herokuapp.com/";
                 break;
             case "warehouse_code":
-                window.location.href = "https://github.com/amitsinghgh19/DreamTeamProject-2";
+                window.location.href = "https://github.com/pirueto2004/myProject2";
                 break;
             case "warehouse_post" :
                 window.location.href = " ";
