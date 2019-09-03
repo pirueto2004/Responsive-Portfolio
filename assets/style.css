@@ -179,4 +179,39 @@ body {
   color: #fff !important;
 }
 
+/* Shuffle Filter*/
+#filter {
+  margin: 0 auto;
+  text-align: center;
+}
 
+
+#filter li a {
+  color: #1D3557;
+  display: block;
+  text-transform: uppercase;
+  padding: 5px 5px;
+  border-radius: 4px;
+  transition: inherit;
+}
+#filter li a.active,
+#filter li a:hover {
+  position: relative;
+  background: #1D3557;
+  color: #fff;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+#filter li a.active::after,
+#filter li a:hover::after{
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid rgba(104, 195, 163, 1);
+  bottom: -9px;
+  left: 50%;
+  margin-left: -8px;
+}
