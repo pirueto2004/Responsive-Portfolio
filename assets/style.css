@@ -42,10 +42,8 @@ body {
 /* Horizontal line that divides contents on the box */
 .hr {
     width:100%;
-    /* margin:0 auto; */
     height: 1px;
     border-bottom: 1px solid teal;
-  
 }
 
 #profile-pic {
