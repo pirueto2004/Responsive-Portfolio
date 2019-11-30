@@ -8,11 +8,29 @@ $(document).ready(function(){
         let buttonId = $(this).attr("id");
 
         switch (buttonId) {
+            case "project-app_page":
+                window.location.href = "https://react-redux-firebase-app-dba38.web.app/";
+                break;
+            case "project-app_code":
+                window.location.href = "https://github.com/pirueto2004/my-react-redux-firebase-app";
+                break;
+            case "project-app_post" :
+                window.location.href = " ";
+                break;
+            case "yelpcamp_page":
+                window.location.href = "https://glacial-tor-47265.herokuapp.com/";
+                break;
+            case "yelpcamp_code":
+                window.location.href = "https://github.com/pirueto2004/yelpcamp-page-app";
+                break;
+            case "yelpcamp_post" :
+                window.location.href = " ";
+                break;
             case "ezvalpark_page":
-                window.location.href = "https://ez-valpark.herokuapp.com/";
+                window.location.href = "https://ezvaletparking-app.herokuapp.com/";
                 break;
             case "ezvalpark_code":
-                window.location.href = "https://github.com/amitsinghgh19/dreamteampro3";
+                window.location.href = "https://github.com/pirueto2004/EZValetParking-app";
                 break;
             case "ezvalpark_post" :
                 window.location.href = " ";
