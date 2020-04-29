@@ -183,4 +183,20 @@ $(document).ready(function(){
         };      
     });
 
+   
+        $('#myList li:first-child').tab('show')
+     
+
+    $('#myList li').on('click', function (e) {
+        e.preventDefault()
+        $('li.list-group-item.active').removeClass("active");
+        $(this).addClass("active");
+        $('.tab-pane.active').show()
+    });
+
+    $('li[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        e.target // newly activated tab
+        e.relatedTarget // previous active tab
+      })
+
 });

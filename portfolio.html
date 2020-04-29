@@ -13,6 +13,7 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/css/mdb.min.css" rel="stylesheet">
         <!-- jQuery - Compiled and minified CSS -->  
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       <script src="assets/js/modernizr.js"></script> <!-- Modernizr -->
       <!-- My own styling CSS -->
       <link rel="stylesheet"  type="text/css" href="assets/style.css">
           
@@ -53,32 +54,38 @@
     </div>
 
     <!-- Main content -->
-    <div class="container" >
+    <div id="container1" class="container" >
         <div class="row mb-3">
             <div class="col-12 mb-3">
                 <div class="content-box mt-3" >
                     <h1 class="card-title">Portfolio</h1>
                     <div class="hr"></div>
                     <!-- <div class="card-body">  -->
-                        <!-- <div class="row mt-3 mb-3 mx-auto">
-                            <div class="col-md-12 d-flex align-items-center">
-                                <ul class="list-group list-group-horizontal-md small my-2 mx-auto" id="filter">
-                                    <li class="list-group-item py-2 px-3"><a class="active" data-group="all">All</a></li>
-                                    <li class="list-group-item py-2 px-2"><a data-group="html-css-js">HTML/CSS/JS</a></li>
-                                    <li class="list-group-item py-2 px-2"><a data-group="mern-stack">MERN Stack</a></li>
-                                    <li class="list-group-item py-2 px-2"><a data-group="firebase">Firebase</a></li>
-                                    <li class="list-group-item py-2 px-2"><a data-group="mysql">MYSQL</a></li>
-                                    <li class="list-group-item py-2 px-2"><a data-group="mongodb">MongoDB</a></li>
-                                    <li class="list-group-item py-2 px-2"><a data-group="html-email">HTML Email</a></li>
-                                    <li class="list-group-item py-2 px-2"><a data-group="design">Design</a></li>
-                                    <li class="list-group-item py-2 px-2"><a data-group="wip">Work in Progress</a></li>
-                                </ul>
-                            </div>
-                        </div> -->
-                        <div class="row mt-3 mb-3 mx-auto">
-                                <div class="col-md-6 d-flex align-items-center">
+                        <div class="container cd-main-content">
+                            <div class="cd-tab-filter-wrapper">
+                                <div class="cd-tab-filter">
+                                    <ul class="cd-filters">
+                                        <li class="placeholder"> 
+                                            <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+                                        </li> 
+                                        <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+                                        <li class="filter" data-filter=".html-css-js"><a href="#0" data-type="html-css-js">HTML/CSS/JS</a></li>
+                                        <li class="filter" data-filter=".nodejs"><a href="#0" data-type="nodejs">NODEJS</a></li>
+                                        <li class="filter" data-filter=".react"><a href="#0" data-type="react">REACT</a></li>
+                                        <li class="filter" data-filter=".mern-stack"><a href="#0" data-type="mern-stack">MERN-STACK</a></li>
+                                        <li class="filter" data-filter=".firebase"><a href="#0" data-type="firebase">FIREBASE</a></li>
+                                        <li class="filter" data-filter=".mysql"><a href="#0" data-type="mysql">MYSQL</a></li>
+                                        <li class="filter" data-filter=".mongodb"><a href="#0" data-type="mongodb">MONGODB</a></li>
+                                        <li class="filter" data-filter=".progress"><a href="#0" data-type="progress">WORK IN PROGRESS</a></li>
+                                    </ul> <!-- cd-filters -->
+                                </div> <!-- cd-tab-filter -->
+                            </div> <!-- cd-tab-filter-wrapper -->
+
+                            <section class="cd-gallery">
+                                <ul>
+                                    <li class="mix html check1 radio2 option3">
                                         <!-- Card -->
-                                        <div class="card mb-4 p-2" >
+                                        <div class="card mb-0 p-2" >
                                             <!-- Content -->
                                             <div class="text-dark text-center p-0">
                                                 <div class="mb-2" >  
@@ -91,255 +98,245 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                            <div class="col-md-6 d-flex align-items-center">
-                                <!-- Card -->
-                                <div class="card mb-4 p-2" >
-                                    <!-- Content -->
-                                    <div class="text-dark text-center p-0">
-                                        <div class="mb-2" >  
-                                            <img class="card-img-top" src="assets/images/yelp-camp-app.JPG" alt="yelpcamp-App">
-                                            <h4 class="font-weight-bold my-3 py-1">YelpCamp App</h4>
-                                            <a id="yelpcamp_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
-                                            <a id="yelpcamp_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
-                                            <a id="yelpcamp_post" class="btn btn-sm btn-indigo darken-4 mt-2 rounded p-2"><i class="fab fa-linkedin"></i> View Post</a>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 d-flex align-items-center">
-                                <!-- Card -->
-                                <div class="card mb-4 p-2" >
-                                    <!-- Content -->
-                                    <div class="text-dark text-center p-0">
-                                        <div class="mb-2" >  
-                                            <img class="card-img-top" src="assets/images/ezvalpark-app.JPG" alt="ezvalpark-App">
-                                            <h4 class="font-weight-bold my-3 py-1">eZ Valpark App</h4>
-                                            <a id="ezvalpark_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
-                                            <a id="ezvalpark_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
-                                            <a id="ezvalpark_post" class="btn btn-sm btn-indigo darken-4 mt-2 rounded p-2"><i class="fab fa-linkedin"></i> View Post</a>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                    </li>
 
-                            <div class="col-md-6 d-flex align-items-center">
-                                <!-- Card -->
-                                <div class="card mb-4 p-2" >
-                                    <!-- Content -->
-                                    <div class="text-dark text-center p-0">
-                                        <div class="mb-2" >  
-                                            <img class="card-img-top" src="assets/images/googlebook-app.JPG" alt="googlebook-App">
-                                            <h4 class="font-weight-bold my-3 py-1">Google Book Search App</h4>
-                                            <a id="googlebook_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
-                                            <a id="googlebook_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
-                                            <a id="googlebook_post" class="btn btn-sm btn-indigo darken-4 mt-2 rounded p-2"><i class="fab fa-linkedin"></i> View Post</a>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 d-flex align-items-center">
-                                <!-- Card -->
-                                <div class="card mb-4 p-2" >
-                                    <!-- Content -->
-                                    <div class="text-dark text-center p-0">
-                                        <div class="mb-2" >  
-                                            <img class="card-img-top" src="assets/images/clickygame-app.JPG" alt="clickygame-App">
-                                            <h4 class="font-weight-bold my-3 py-1">Clicky Game App</h4>
-                                            <a id="clickygame_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
-                                            <a id="clickygame_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
-                                            <a id="clickygame_post" class="btn btn-sm btn-indigo darken-4 mt-2 rounded p-2"><i class="fab fa-linkedin"></i> View Post</a>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 d-flex align-items-center">
-                                <!-- Card -->
-                                <div class="card mb-4 p-2" >
-                                    <!-- Content -->
-                                    <div class="text-dark text-center p-0">
-                                        <div class="mb-2" >  
-                                            <img class="card-img-top" src="assets/images/newsPeek-app.JPG" alt="newsPeek-App">
-                                            <h4 class="font-weight-bold my-3 py-1">News Scraping App</h4>
-                                            <a id="newspeek_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
-                                            <a id="newspeek_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
-                                            <a id="newspeek_post" class="btn btn-sm btn-indigo darken-4 mt-2 rounded p-2"><i class="fab fa-linkedin"></i> View Post</a>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 d-flex align-items-center">
-                                <!-- Card -->
-                                <div class="card mb-4 p-2" >
-                                    <!-- Content -->
-                                    <div class="text-dark text-center p-0">
-                                        <div class="mb-2" >  
-                                            <img class="card-img-top" src="assets/images/login-page.JPG" alt="Warehouse-App">
-                                            <h4 class="font-weight-bold my-3 py-1">Warehouse Connect App</h4>
-                                            <a id="warehouse_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
-                                            <a id="warehouse_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
-                                            <a id="warehouse_post" class="btn btn-sm btn-indigo darken-4 mt-2 rounded p-2"><i class="fab fa-linkedin"></i> View Post</a>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 d-flex align-items-center">
-                                <!-- Card -->
-                                <div class="card mb-4 p-2" >
-                                    <!-- Content -->
-                                    <div class="text-dark text-center p-0">
-                                        <div class="mb-2" >  
-                                            <img class="card-img-top" src="assets/images/burger-app2.jpg" alt="Burger-App">
-                                            <h4 class="font-weight-bold my-3 py-1">Burger App</h4>
-                                            <a id="burger_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
-                                            <a id="burger_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
-                                            <a id="burger_post" class="btn btn-sm btn-indigo darken-4 mt-2 rounded p-2"><i class="fab fa-linkedin"></i> View Post</a>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 d-flex align-items-center">
-                                <!-- Card -->
-                                <div class="card mb-4 p-2" >
-                                    <!-- Content -->
-                                    <div class="text-dark text-center p-0">
-                                        <div class="mb-2" >  
-                                            <img class="card-img-top" src="assets/images/bamazon-app-cover-pic.JPG" alt="Bamazon-App">
-                                            <h4 class="font-weight-bold my-3 py-1">Bamazon App</h4>
-                                            
-                                            <a id="bamazon_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 d-flex align-items-center">
-                                    <!-- Card -->
-                                    <div class="card mb-4 p-2" >
-                                        <!-- Content -->
-                                        <div class="text-dark text-center p-0">
-                                            <div class="mb-2" >  
-                                                <img class="card-img-top" src="assets/images/friend-finder.JPG" alt="Friend Finder">
-                                                <h4 class="font-weight-bold my-3 py-1">Friend-Finder App</h4>
-                                                <a id="ff_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
-                                                <a id="ff_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
-                                                <a id="ff_post" class="btn btn-sm btn-indigo darken-4 mt-2 rounded p-2"><i class="fab fa-linkedin"></i> View Post</a>
+                                    <li class="mix html-css-js nodejs mongodb check2 radio2 option2">
+                                        <!-- Card -->
+                                        <div class="card mb-0 p-2" >
+                                            <!-- Content -->
+                                            <div class="text-dark text-center p-0">
+                                                <div class="mb-2" >  
+                                                    <img class="card-img-top" src="assets/images/yelp-camp-app.JPG" alt="yelpcamp-App">
+                                                    <h4 class="font-weight-bold my-3 py-1">YelpCamp App</h4>
+                                                    <a id="yelpcamp_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
+                                                    <a id="yelpcamp_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
+                                                    <a id="yelpcamp_post" class="btn btn-sm btn-indigo darken-4 mt-2 rounded p-2"><i class="fab fa-linkedin"></i> View Post</a>
+                                                    
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                            </div>
-                            <div class="col-md-6 d-flex align-items-center">
-                                    <!-- Card -->
-                                    <div class="card mb-4 p-2" >
-                                        <!-- Content -->
-                                        <div class="text-dark text-center p-0">
-                                            <div class="mb-2">
-                                                <img class="card-img-top" src="assets/images/liri_bot.PNG" alt="LIRI">
-                                                <h5 class="font-weight-bold my-3 py-1">Liri-Bot App</h5>
-                                                <a id="liri_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
+                                    </li>
+                                
+                                    
+                                    <li class="mix html-css-js mern-stack react mongodb check3 radio3 option1">
+                                        <!-- Card -->
+                                        <div class="card mb-0 p-2" >
+                                            <!-- Content -->
+                                            <div class="text-dark text-center p-0">
+                                                <div class="mb-2" >  
+                                                    <img class="card-img-top" src="assets/images/ezvalpark-app.JPG" alt="ezvalpark-App">
+                                                    <h4 class="font-weight-bold my-3 py-1">eZ Valpark App</h4>
+                                                    <a id="ezvalpark_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
+                                                    <a id="ezvalpark_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
+                                                    <a id="ezvalpark_post" class="btn btn-sm btn-indigo darken-4 mt-2 rounded p-2"><i class="fab fa-linkedin"></i> View Post</a>
+                                                    
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                            </div>
-
-                            <div class="col-md-6 d-flex align-items-center">
-                                    <!-- Card -->
-                                    <div class="card mb-4 p-2" >
-                                        <!-- Content -->
-                                        <div class="text-dark text-center p-0">
-                                            <div class="mb-2">
-                                                <img class="card-img-top" src="assets/images/vms.JPG" alt="VMS">
-                                                <h5 class="font-weight-bold my-3 py-1">Visitor Management System</h5>
-                                                <a id="vms_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
-                                                <a id="vms_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
+                                    </li>
+                                        
+                                    <li class="mix mern-stack react mongodb check3 radio2 option4">
+                                        <!-- Card --> 
+                                        <div class="card mb-0 p-2" >
+                                            <!-- Content -->
+                                            <div class="text-dark text-center p-0">
+                                                <div class="mb-2" >  
+                                                    <img class="card-img-top" src="assets/images/googlebook-app.JPG" alt="googlebook-App">
+                                                    <h4 class="font-weight-bold my-3 py-1">Google Book Search App</h4>
+                                                    <a id="googlebook_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
+                                                    <a id="googlebook_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
+                                                    <a id="googlebook_post" class="btn btn-sm btn-indigo darken-4 mt-2 rounded p-2"><i class="fab fa-linkedin"></i> View Post</a>
+                                                    
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                            </div>
+                                    </li>
 
-                            <div class="col-md-6 d-flex align-items-center">
-                                    <!-- Card -->
-                                    <div class="card mb-4 p-2" >
-                                        <!-- Content -->
-                                        <div class="text-dark text-center p-0">
-                                            <div class="mb-2">
-                                                <img class="card-img-top" src="assets/images/train-scheduler.png" alt="Train Scheduler">
-                                                <h5 class="font-weight-bold my-3 py-1">Train Scheduler</h5>
-                                                <a id="train_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
-                                                <a id="train_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
-                                                <a id="train_post" class="btn btn-sm btn-indigo darken-4 mt-2 rounded p-2"><i class="fab fa-linkedin"></i> View Post</a>
+                                    <li class="mix react check1 radio3 option2">
+                                        <!-- Card -->
+                                        <div class="card mb-0 p-2" >
+                                            <!-- Content -->
+                                            <div class="text-dark text-center p-0">
+                                                <div class="mb-2" >  
+                                                    <img class="card-img-top" src="assets/images/clickygame-app.JPG" alt="clickygame-App">
+                                                    <h4 class="font-weight-bold my-3 py-1">Clicky Game App</h4>
+                                                    <a id="clickygame_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
+                                                    <a id="clickygame_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
+                                                    <a id="clickygame_post" class="btn btn-sm btn-indigo darken-4 mt-2 rounded p-2"><i class="fab fa-linkedin"></i> View Post</a>
+                                                    
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                            </div>
-
-                            <div class="col-md-6 d-flex align-items-center">
-                                    <!-- Card -->
-                                    <div class="card mb-4 p-2" >
-                                        <!-- Content -->
-                                        <div class="text-dark text-center p-0">
-                                            <div class="mb-2">
-                                                <img class="card-img-top" src="assets/images/gifboard.png" alt="Gifs Board">
-                                                <h5 class="font-weight-bold my-3 py-1">Gifs Board</h5>
-                                                <a id="gifs_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
-                                                <a id="gifs_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
-                                                <a id="gifs_post" class="btn btn-sm btn-indigo darken-4 mt-2 rounded p-2"><i class="fab fa-linkedin"></i> View Post</a>
+                                    </li>
+                                    <li class="mix html-css-js nodejs mongodb check2 radio3 option3">
+                                        <!-- Card -->
+                                        <div class="card mb-0 p-2" >
+                                            <!-- Content -->
+                                            <div class="text-dark text-center p-0">
+                                                <div class="mb-2" >  
+                                                    <img class="card-img-top" src="assets/images/newsPeek-app.JPG" alt="newsPeek-App">
+                                                    <h4 class="font-weight-bold my-3 py-1">News Scraping App</h4>
+                                                    <a id="newspeek_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
+                                                    <a id="newspeek_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
+                                                    <a id="newspeek_post" class="btn btn-sm btn-indigo darken-4 mt-2 rounded p-2"><i class="fab fa-linkedin"></i> View Post</a>
+                                                    
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                            </div>
-
-                            <div class="col-md-6 d-flex align-items-center">
-                                <!-- Card -->
-                                <div class="card mb-4 p-2" >
-                                    <!-- Content -->
-                                    <div class="text-dark text-center p-0">
-                                        <div class="mb-2">
-                                            <img class="card-img-top" src="assets/images/hang-man.png" alt="Hang-man Game">
-                                            <h5 class="font-weight-bold my-3 py-1">Word-Guessing Game</h5>
-                                            <a id="hangman_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
-                                            <a id="hangman_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-  
-                        <!-- </div> -->
-
-                        <!-- <div class="row mb-2"> -->
-
-                            <div class="col-md-6 d-flex align-items-center">
-                                    <!-- Card -->
-                                    <div class="card mb-4 p-2" >
-                                        <!-- Content -->
-                                        <div class="text-dark text-center p-0">
-                                            <div class="mb-2">
-                                                <img class="card-img-top" src="assets/images/trivia-game.png" alt="Trivia Game">
-                                                <h5 class="font-weight-bold my-3 py-1">Trivia Game</h5>
-                                                <a id="trivia_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
-                                                <a id="trivia_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
-                                                <a id="trivia_post" class="btn btn-sm btn-indigo darken-4 mt-2 rounded p-2"><i class="fab fa-linkedin"></i> View Post</a>
+                                    </li>
+                                    <li class="mix html-css-js nodejs mongodb mysql check2 radio2 option1">
+                                        <!-- Card -->
+                                        <div class="card mb-0 p-2" >
+                                            <!-- Content -->
+                                            <div class="text-dark text-center p-0">
+                                                <div class="mb-2" >  
+                                                    <img class="card-img-top" src="assets/images/login-page.JPG" alt="Warehouse-App">
+                                                    <h4 class="font-weight-bold my-3 py-1">Warehouse Connect App</h4>
+                                                    <a id="warehouse_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
+                                                    <a id="warehouse_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
+                                                    <a id="warehouse_post" class="btn btn-sm btn-indigo darken-4 mt-2 rounded p-2"><i class="fab fa-linkedin"></i> View Post</a>
+                                                    
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                            </div>
+                                    </li>
+                                    <li class="mix html-css-js nodejs mysql check1 radio3 option4">
+                                        <!-- Card -->
+                                        <div class="card mb-0 p-2" >
+                                            <!-- Content -->
+                                            <div class="text-dark text-center p-0">
+                                                <div class="mb-2" >  
+                                                    <img class="card-img-top" src="assets/images/burger-app2.jpg" alt="Burger-App">
+                                                    <h4 class="font-weight-bold my-3 py-1">Burger App</h4>
+                                                    <a id="burger_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
+                                                    <a id="burger_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
+                                                    <a id="burger_post" class="btn btn-sm btn-indigo darken-4 mt-2 rounded p-2"><i class="fab fa-linkedin"></i> View Post</a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mix nodejs mysql color-2 check1 radio2 option3">
+                                        <!-- Card -->
+                                        <div class="card mb-0 p-2" >
+                                            <!-- Content -->
+                                            <div class="text-dark text-center p-0">
+                                                <div class="mb-2" >  
+                                                    <img class="card-img-top" src="assets/images/bamazon-app-cover-pic.JPG" alt="Bamazon-App">
+                                                    <h4 class="font-weight-bold my-3 py-1">Bamazon App</h4>
+                                                    
+                                                    <a id="bamazon_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mix html-css-js nodejs check3 radio2 option4">
+                                        <!-- Card -->
+                                        <div class="card mb-0 p-2" >
+                                            <!-- Content -->
+                                            <div class="text-dark text-center p-0">
+                                                <div class="mb-2" >  
+                                                    <img class="card-img-top" src="assets/images/friend-finder.JPG" alt="Friend Finder">
+                                                    <h4 class="font-weight-bold my-3 py-1">Friend-Finder App</h4>
+                                                    <a id="ff_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
+                                                    <a id="ff_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
+                                                    <a id="ff_post" class="btn btn-sm btn-indigo darken-4 mt-2 rounded p-2"><i class="fab fa-linkedin"></i> View Post</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
 
-                            <div class="col-md-6 d-flex align-items-center">
-                                <!-- Card -->
-                                <div class="card mb-4 p-2" >
+                                    <li class="mix nodejs check3 radio2 option4">
+                                        <!-- Card -->
+                                        <div class="card mb-0 p-2" >
+                                            <!-- Content -->
+                                            <div class="text-dark text-center p-0">
+                                                <div class="mb-2">
+                                                    <img class="card-img-top" src="assets/images/liri_bot.PNG" alt="LIRI">
+                                                    <h5 class="font-weight-bold my-3 py-1">Liri-Bot App</h5>
+                                                    <a id="liri_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="mix html-css-js firebase check3 radio3 option2">
+                                        <!-- Card -->
+                                        <div class="card mb-0 p-2" >
+                                            <!-- Content -->
+                                            <div class="text-dark text-center p-0">
+                                                <div class="mb-2">
+                                                    <img class="card-img-top" src="assets/images/vms.JPG" alt="VMS">
+                                                    <h5 class="font-weight-bold my-3 py-1">Visitor Management System</h5>
+                                                    <a id="vms_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
+                                                    <a id="vms_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mix html-css-js firebase check1 radio3 option1">
+                                        <!-- Card -->
+                                        <div class="card mb-0 p-2" >
+                                            <!-- Content -->
+                                            <div class="text-dark text-center p-0">
+                                                <div class="mb-2">
+                                                    <img class="card-img-top" src="assets/images/train-scheduler.png" alt="Train Scheduler">
+                                                    <h5 class="font-weight-bold my-3 py-1">Train Scheduler</h5>
+                                                    <a id="train_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
+                                                    <a id="train_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
+                                                    <a id="train_post" class="btn btn-sm btn-indigo darken-4 mt-2 rounded p-2"><i class="fab fa-linkedin"></i> View Post</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mix html-css-js check1 radio3 option1">
+                                        <!-- Card -->
+                                        <div class="card mb-0 p-2" >
+                                            <!-- Content -->
+                                            <div class="text-dark text-center p-0">
+                                                <div class="mb-2">
+                                                    <img class="card-img-top" src="assets/images/gifboard.png" alt="Gifs Board">
+                                                    <h5 class="font-weight-bold my-3 py-1">Gifs Board</h5>
+                                                    <a id="gifs_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
+                                                    <a id="gifs_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
+                                                    <a id="gifs_post" class="btn btn-sm btn-indigo darken-4 mt-2 rounded p-2"><i class="fab fa-linkedin"></i> View Post</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mix html-css-js check1 radio3 option1">
+                                        <!-- Card -->
+                                        <div class="card mb-0 p-2" >
+                                            <!-- Content -->
+                                            <div class="text-dark text-center p-0">
+                                                <div class="mb-2">
+                                                    <img class="card-img-top" src="assets/images/hang-man.png" alt="Hang-man Game">
+                                                    <h5 class="font-weight-bold my-3 py-1">Word-Guessing Game</h5>
+                                                    <a id="hangman_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
+                                                    <a id="hangman_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mix html-css-js check1 radio3 option1">
+                                        <!-- Card -->
+                                        <div class="card mb-0 p-2" >
+                                            <!-- Content -->
+                                            <div class="text-dark text-center p-0">
+                                                <div class="mb-2">
+                                                    <img class="card-img-top" src="assets/images/trivia-game.png" alt="Trivia Game">
+                                                    <h5 class="font-weight-bold my-3 py-1">Trivia Game</h5>
+                                                    <a id="trivia_page" class="btn btn-sm btn-pink darken-4 mt-2 rounded p-2"><i class="fas fa-clone left"></i> Live View</a>
+                                                    <a id="trivia_code" class="btn btn-sm btn-outline-pink darken-4 mt-2 rounded p-2"><i class="fas fa-code"></i> View Project</a>
+                                                    <a id="trivia_post" class="btn btn-sm btn-indigo darken-4 mt-2 rounded p-2"><i class="fab fa-linkedin"></i> View Post</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mix html-css-js check1 radio3 option1">
+                                        <!-- Card -->
+                                <div class="card mb-0 p-2" >
                                     <!-- Content -->
                                     <div class="text-dark text-center p-0">
                                         <div class="mb-2">
@@ -351,8 +348,15 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div> 
-                                
+                                    </li>
+                                    
+                                    <li class="gap"></li>
+                                    <li class="gap"></li>
+                                    <li class="gap"></li>
+                                </ul>
+                                <div class="cd-fail-message">No results found</div>
+                            </section> <!-- cd-gallery -->
+                        </div>
                         </div>
                 </div>
             </div>
@@ -360,18 +364,22 @@
     </div>
 
     <!-- Sticky footer -->
-    <footer class="footer fixed-bottom bg-dark mt-4 py-2 border border-info border-top border-bottom-0 border-left-0 border-right-0">
-            <div class="container py-2 d-flex justify-content-center ">
-            <div class="d-inline mx-1">
-                <span class="text-white"> Copyright &copy; 2019 - All rights reserved<span class="text-muted px-2">|</span></span>
+    <footer class="footer fixed-bottom bg-dark mt-3 py-2 border border-info border-top border-bottom-0 border-left-0 border-right-0">
+        <div class="section-sm text-white">
+          <div class="container py-2 text-center">
+            <div class="col-12 text-center py-1">
+              <!--Facebook-->
+              <button id="btn-fb" type="button" class="btn btn-circle btn-lg btn-fb"><i class="fab fa-facebook-f"></i></button>
+              <!--LinkedIn-->
+              <button id="btn-li" type="button" class="btn btn-circle btn-lg btn-li"><i class="fab fa-linkedin-in"></i></button>
+              <!--Github-->
+              <button id="btn-git" type="button" class="btn btn-circle btn-lg btn-git"><i class="fab fa-github"></i></button>
+              <!--LinkedIn-->
+              <button id="btn-slack" type="button" class="btn btn-circle btn-lg btn-slack"><i class="fab fa-slack"></i></button>
             </div>
-            <div class="d-inline mx-1">
-                <span class="text-white">Julio Bell<span class="text-muted px-2">|</span></a>
-            </div>
-            <div class="d-inline mx-1">
-                <span class="text-white">Web Developer</a>
-            </div>
-            </div>
+            <p>Copyright &copy; 2019 - 2020, All rights reserved.</p>
+          </div>
+        </div>
     </footer>
 
     <!-- Optional JavaScript -->
@@ -383,5 +391,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/js/mdb.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
+    <script src="assets/js/jquery.mixitup.min.js"></script>
+<script src="assets/js/main.js"></script> <!-- Resource jQuery -->
   </body>
   </html>
