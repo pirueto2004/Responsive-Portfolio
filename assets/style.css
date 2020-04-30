@@ -309,7 +309,7 @@ xtab-filter
 .cd-tab-filter {
   /* tabbed navigation style on mobile - dropdown */
   position: relative;
-  height: 50px;
+  height: 50px; 
   width: 140px;
   margin: 0 auto;
   z-index: 1;
@@ -354,6 +354,8 @@ xtab-filter
   /* set same size of the .cd-tab-filter */
   height: 50px;
   width: 140px;
+  text-align: left;
+  margin: 0 auto;
   line-height: 50px;
   padding-left: 14px;
   
@@ -361,6 +363,7 @@ xtab-filter
 .cd-tab-filter a.selected {
   background: #41307c;
   color: #ffffff;
+  
 }
 .cd-tab-filter.is-open::after {
   /* small arrow rotation */
@@ -375,6 +378,7 @@ xtab-filter
 }
 .cd-tab-filter.is-open ul li {
   display: block;
+  padding: 0 2px;
 }
 .cd-tab-filter.is-open .placeholder a {
   /* reduces the opacity of the placeholder on mobile when the menu is open */
@@ -409,13 +413,13 @@ xtab-filter
     color: #9a9a9a;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 0.75rem;
+    font-size: 0.70rem;
   }
   .no-touch .cd-tab-filter a:hover {
     color: #41307c;
   }
   .cd-tab-filter a.selected {
-    background: transparent;
+    background: rgb(226, 244, 247);
     color: #41307c;
     /* create border bottom using box-shadow property */
     box-shadow: inset 0 -2px 0 #41307c;

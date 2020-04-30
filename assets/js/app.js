@@ -8,6 +8,36 @@ $(document).ready(function(){
         let buttonId = $(this).attr("id");
 
         switch (buttonId) {
+            case "todo-app_page":
+                window.location.href = "https://nodebased-todo-app.herokuapp.com/";
+                break;
+            case "todo-app_code":
+                window.location.href = "https://github.com/pirueto2004/Todo-App";
+                break;
+            case "todo-app_post" :
+                window.location.href = " ";
+                break;
+
+            case "forkify-app_page":
+                window.location.href = "https://mysterious-crag-99992.herokuapp.com/#46956";
+                break;
+            case "forkify-app_code":
+                window.location.href = "https://github.com/pirueto2004/just-cook-it-app";
+                break;
+            case "forkify-app_post" :
+                window.location.href = " ";
+                break;
+
+            case "budget-app_page":
+                window.location.href = "https://budget-builder-app.herokuapp.com/";
+                break;
+            case "budget-app_code":
+                window.location.href = "https://github.com/pirueto2004/budget-planner";
+                break;
+            case "budget-app_post" :
+                window.location.href = " ";
+                break;
+
             case "project-app_page":
                 window.location.href = "https://react-redux-firebase-app-dba38.web.app/";
                 break;
@@ -184,19 +214,5 @@ $(document).ready(function(){
     });
 
    
-        $('#myList li:first-child').tab('show')
-     
-
-    $('#myList li').on('click', function (e) {
-        e.preventDefault()
-        $('li.list-group-item.active').removeClass("active");
-        $(this).addClass("active");
-        $('.tab-pane.active').show()
-    });
-
-    $('li[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-        e.target // newly activated tab
-        e.relatedTarget // previous active tab
-      })
-
+   
 });
