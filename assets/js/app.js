@@ -176,10 +176,10 @@ $(document).ready(function(){
                 break;
 
             case "gifs_page" :
-                window.location.href = "https://pirueto2004.github.io/GifBoard/";
+                window.location.href = "https://pirueto2004.github.io/gifboard/";
                 break;
             case "gifs_code" :
-                window.location.href = "https://github.com/pirueto2004/GifBoard";
+                window.location.href = "https://github.com/pirueto2004/gifboard";
                 break;
             case "gifs_post" :
                 window.location.href = "https://www.linkedin.com/feed/update/urn:li:activity:6533171020474433536";
