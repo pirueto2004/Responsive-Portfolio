@@ -166,10 +166,10 @@ $(document).ready(function(){
                 break;
                 
             case "train_page" :
-                window.location.href = "https://pirueto2004.github.io/TrainScheduler/";
+                window.location.href = "https://pirueto2004.github.io/train-scheduler/";
                 break;
             case "train_code" :
-                window.location.href = "https://github.com/pirueto2004/TrainScheduler";
+                window.location.href = "https://github.com/pirueto2004/train-scheduler";
                 break;
             case "train_post" :
                 window.location.href = "https://www.linkedin.com/feed/update/urn:li:activity:6533173168633364480";
